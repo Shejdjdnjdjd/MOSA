@@ -5,26 +5,26 @@ admins = {}
 load_dotenv()
 
 # client vars
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
-SESSION_NAME = getenv("SESSION_NAME", "session")
+API_ID = int(getenv("API_ID", "24928036"))
+API_HASH = getenv("API_HASH", "762f095044e7a6952422685e8abb4701")
+BOT_TOKEN = getenv("BOT_TOKEN", "5574038306:AAEWYHQuKQP_0cnUWWxRArXeqElnuKzInUo")
+SESSION_NAME = getenv("SESSION_NAME", "BACJBLZlDseReqjJLepyqq2Sia-EW0zBu3tAwifWpz85wf4ueQosZPYls-8Lk2kbLldItunQZ305lq--prUPDlqDC2VpPw6GvceHGq1LhO0LSlAxhiS1WjRgO6ncRSXyhOSTfjkAz757Obs6XjvooS-P7UMI1X13ChnpHxlkPv-wGTssjY-_OLR1End-_acEYx3UZbo9c6eViV_JpKiJ85xj-noIE6zG43LlCAc88nQKwTcFIoKG1jdpLEjc53xib7P2x19jUOnikBz4xJo9pGdqbCBA6a3QzfpQebdl6nNzieiEec6xvsW7V2RVM-vU3UvEiIE9FUXfH6He8RRVnmnnAAAAAWGUY4kA")
 
 # mandatory vars
-OWNER_USERNAME = getenv("OWNER_USERNAME")
-ALIVE_NAME = getenv("ALIVE_NAME")
-BOT_USERNAME = getenv("BOT_USERNAME")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "Y_G_U")
+ALIVE_NAME = getenv("ALIVE_NAME", "Fakm")
+BOT_USERNAME = getenv("BOT_USERNAME", "Eev1eebot")
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/levina-lab/video-stream")
 UPSTREAM_BRANCH = getenv("UPSTREM_BRANCH", "main")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "60"))
-GROUP_SUPPORT = getenv("GROUP_SUPPORT", "VeezSupportGroup")
-UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "levinachannel")
+GROUP_SUPPORT = getenv("GROUP_SUPPORT", "Y_9_C")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "Y_9_C")
 
 # database, decorators, handlers mandatory vars
-MONGODB_URL = getenv("MONGODB_URL")
+MONGODB_URL = getenv("MONGODB_URL", "mongodb+srv://veez:mega@cluster0 .heqnd.mongodb.net/veez?retryWrites=true&w=majority")
 COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ ! . $").split())
-OWNER_ID = list(map(int, getenv("OWNER_ID").split()))
-SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "5812571544").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS", "5812571544").split()))
 
 # image resources vars
 IMG_1 = getenv("IMG_1", "https://te.legra.ph/file/2a726c634dbc3b9e8f451.png")
